@@ -1,0 +1,427 @@
+@font-face {
+    font-family: poppins;
+    src: url(./font/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: lato ;
+    src: url(./font/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: work-sans;
+    src: url(./font/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    margin: auto;
+    display: block;
+    font-family: work-sans;
+    max-width: 1790px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 12px;
+}
+header{
+    height: 10vh;
+    width: 100%;
+}
+header .head-container{
+    width: 95%;
+    margin: auto;
+    padding: 21px 0px;
+}
+header .brand{
+    width: 25%;
+    float: left;
+}
+header .brand a{
+    padding: 5px 12px;
+    display: block;
+    font-family: poppins;
+    color: #0c0c0c;
+}
+header .nav{
+    width: 75%;
+    float: right;
+    text-align: right;
+
+}
+
+header li a{
+    font-family: lato ;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #0f0f0f65;
+    transition: 0.5s;
+
+}
+.active{
+    text-decoration: underline;
+    color: #000;
+}
+header li a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+#slider {
+    height: 600px;
+}
+
+
+@keyframes slider {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    div#slider { overflow: hidden; }
+    div#slider .figure img { width: 20%; float: left; }
+    div#slider .figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 20s slider infinite; 
+    }
+hr{
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: #b1afaf;
+    margin: 75px 0px;
+}    
+
+section{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+section h1{
+    color: #333333;
+    font-size: 38px;
+    font-weight: 400;
+    padding: 0px 0px 16px 0px;
+}
+section h3{
+    color: #777777;
+    padding: 0px 0px 16px 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+section p{
+    color: #888;
+}
+.featured{
+    width: 100%;
+    padding: 50px;
+}
+.featured .text{
+    width: 35%;
+    float: left;
+    padding: 0px 25px;
+}
+.featured .img{
+    width: 65%;
+    float: right;
+}
+.img img{
+    width: 100%;
+}
+
+.footer{
+    padding: 14px 0px;
+}
+.footer-container{
+    width: 95%;
+    margin: auto;
+
+}
+
+.footer .nav{
+    width: 50%;
+    float: left;
+    text-align: left;
+
+}
+.footer .nav li{
+    padding: 0;
+
+}
+.footer .nav li a{
+    text-transform: lowercase;
+    
+}
+.footer .brand{
+    width: 50%;
+    float: right;
+    text-align: right;
+
+}
+.footer .brand a{
+    font-family: lato ;
+    text-transform: lowercase;
+    font-size: 12px;
+    color: #0f0f0f65;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 735px) {
+
+    #slider {
+        display: none;
+    }
+}
+
+
+/* Contact */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#contact{
+    height: 100vh;
+}
+.main{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px;
+    height: 80vh;
+}
+.contact-section{
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-top: 10%;
+}
+.form-section{
+    width: 50%;
+    float: right;
+    box-shadow: -2px 0px  #b1afaf;
+
+}
+.contact-container{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.contact-container form{
+
+}
+label{
+    width: 100%;
+    display: block;
+}
+input, textarea {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    width: 100%;
+    padding: 38px;
+  }
+ input{
+    height: 40px;
+ }
+ textarea:hover{
+    background-color: aliceblue;
+
+ }
+  input:hover{
+    background-color: aliceblue;
+  }
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+::placeholder{
+    font-family: work-sans;
+    font-size: 14px;
+}
+input.button{
+    width: 30%;
+    font-family: work-sans;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* About Page CSS Starts here */
+
+#about{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+#about img{
+    width: 50%;
+}
+#about h2{
+    color: #7f7f7f;
+    font-weight: 400;
+    font-size: 34px;
+    margin: 20px 0 5px 0;
+}
+#about h3{
+    color: #7f7f7f;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#about p{
+    margin-bottom: 20px;
+    color: #333333;
+}
+#about .btn-about{
+    margin-top: 50px;
+}
+.btn-about a{
+    padding: 10px;
+    border: 1px solid #333333;
+    color: #333333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-about a:hover{
+    color: rgba(192, 7, 7, 0.788);
+}
+
+/* Arch Page CSS Starts here */
+.gallery{
+    width: 100%;
+}
+.gallery-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.gallery .container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    max-width: 100%;
+    transition: all 0.3s;
+    transform: scale(1);
+
+  }
+  .container:hover .image{
+    transform: scale(1.1);
+  }
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    opacity:0;
+    font-size: 20px;
+    text-align: center;
+    height: 300px;
+    cursor: pointer;
+    line-height: 300px;
+    
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+    transition:  0.5s;
+
+  }
+
+/* Achievements Page CSS Starts here */
+
+  .achievements{
+    width: 65%;
+    margin:auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .achievements .a1{
+    padding: 50px;
+  }
+  .achievements h1{
+    font-weight: 400;
+  }
+
+  /* Press Page CSS Starts here */
+
+  .small-hr{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .press{
+    width: 65%;
+    margin:auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .press .a1{
+    width: 100%;
+    display: block;
+    height: 200px;
+  }
+  .press .content{
+    width: 60%;
+    float: left;
+  }
+  .press .btn-all{
+    width: 40%;
+    float: right;
+    text-align: center;
+    padding: 0px 0px 0px 100px;
+  }
+  .press .btn-about a{
+    display: block;
+    margin: 10px 0px;
+  }
+  .press h1{
+    font-weight: 400;
+    
+  }
+  .press h3{
+    font-weight: 400;
+  }
+  .press p{
+    padding: 10px 0px;
+  }
+  .press .btn-about{
+    margin-top: 20px;
+  }
